@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="User can add multiple items to cart" skipped="0" tests="1" time="35.86" timestamp="2020-09-29 04:28:23"><testcase name="user verifies shopping cart has 2 items in cart"><failure message="&#10;Expected: &quot;1 Products&quot;&#10;     but: was &quot;2 Products&quot;" type="java.lang.AssertionError">
-Expected: "1 Products"
-     but: was "2 Products"</failure><system-err>
-Expected: "1 Products"
-     but: was "2 Products"&#13;
-com.testrealpage.StepDefinitions.BuyStepDefinitions.user_verifies_the_total_products(BuyStepDefinitions.java:114)&#13;
-✽.user verifies the total 1 Products(src/test/resources/Features/buy.feature:25)&#13;
-</system-err></testcase></testsuite>

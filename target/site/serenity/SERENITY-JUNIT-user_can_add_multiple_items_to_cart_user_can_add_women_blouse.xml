@@ -1,1 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="User can add multiple items to cart" skipped="0" tests="3" time="84.43" timestamp="2020-09-29 05:29:12"><testcase name="User can add women blouse"/><testcase name="user can add women evening dress"/><testcase name="user verifies shopping cart has 2 items in cart"/></testsuite>
