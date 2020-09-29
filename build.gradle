@@ -1,0 +1,49 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'net.serenity-bdd.aggregator'                             
+
+version '1.0-SNAPSHOT'
+
+repositories {
+
+    jcenter {
+    }
+}
+
+buildscript {
+    repositories {
+
+        jcenter {
+           
+        }
+
+    }
+    dependencies {
+        classpath("net.serenity-bdd:serenity-gradle-plugin:2.0.49")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'net.serenity-bdd.aggregator'
+
+sourceCompatibility = 1.8
+
+dependencies {
+   	compile group: 'net.serenity-bdd', name: 'serenity-core', version:'2.0.49'
+ 	compile group: 'net.serenity-bdd', name: 'serenity-screenplay', version:'2.0.49'
+   	compile group: 'net.serenity-bdd', name: 'serenity-screenplay-webdriver', version:'2.0.49'
+   	compile group: 'net.serenity-bdd', name: 'serenity-screenplay-rest', version:'2.0.49'
+	compile group: 'net.serenity-bdd', name: 'serenity-cucumber', version:'1.9.20'
+   	testCompile group: 'net.serenity-bdd', name: 'serenity-junit', version:'2.0.19'
+   	compile group: 'com.mashape.unirest', name: 'unirest-java', version: '1.4.9'
+   	
+}
+
+tasks.withType(Test){
+    systemProperties = System.properties
+}
+
+gradle.startParameter.continueOnFailure = true
